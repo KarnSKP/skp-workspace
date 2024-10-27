@@ -12,7 +12,7 @@ trail_x = [x]
 trail_y = [y]
 
 time = 0
-dt = 5*1e-3
+dt = 1e-2
 
 fig, ax = plt.subplots()
 ax.grid()
