@@ -1,1 +1,1 @@
-very awesome skp python workspace
+KarnSKP's python workspace.
