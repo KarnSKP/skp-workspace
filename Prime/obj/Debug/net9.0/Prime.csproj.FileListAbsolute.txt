@@ -1,0 +1,15 @@
+C:\Users\admin\Projects\skp-workspace\Prime\bin\Debug\net9.0\Prime.exe
+C:\Users\admin\Projects\skp-workspace\Prime\bin\Debug\net9.0\Prime.deps.json
+C:\Users\admin\Projects\skp-workspace\Prime\bin\Debug\net9.0\Prime.runtimeconfig.json
+C:\Users\admin\Projects\skp-workspace\Prime\bin\Debug\net9.0\Prime.dll
+C:\Users\admin\Projects\skp-workspace\Prime\bin\Debug\net9.0\Prime.pdb
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\Prime.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\Prime.AssemblyInfoInputs.cache
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\Prime.AssemblyInfo.cs
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\Prime.csproj.CoreCompileInputs.cache
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\Prime.sourcelink.json
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\Prime.dll
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\refint\Prime.dll
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\Prime.pdb
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\Prime.genruntimeconfig.cache
+C:\Users\admin\Projects\skp-workspace\Prime\obj\Debug\net9.0\ref\Prime.dll
