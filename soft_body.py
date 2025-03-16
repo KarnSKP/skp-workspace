@@ -50,7 +50,7 @@ def get_acc(pos):
             acc[i][j] = (Fs + gravity) / mass
     return acc
 
-def resolve_collisions():
+def if_collisions():
     for i1 in range(N):
         for j1 in range(N):
             for i2 in range(N):
@@ -67,21 +67,21 @@ def resolve_collisions():
 
                     if dist_sq < min_dist ** 2 and dist_sq != 0:
                         dist = np.sqrt(dist_sq)
-                        normal = diff / dist
+                        norm = diff / dist
                         
                         overlap = min_dist - dist
-                        ball1 -= normal * (overlap / 2)
-                        ball2 += normal * (overlap / 2)
+                        ball1 -= norm * (overlap / 2)
+                        ball2 += norm * (overlap / 2)
 
                         rel_vel = vel2 - vel1
-                        speed_along_normal = rel_vel.dot(normal)
+                        speed_n = rel_vel.dot(norm)
 
-                        if speed_along_normal > 0:
+                        if speed_n > 0:
                             continue
 
-                        impulse = -2 * speed_along_normal / (2 * mass)
-                        vel1 -= impulse * normal
-                        vel2 += impulse * normal
+                        impulse = -2 * speed_n / (2 * mass)
+                        vel1 -= impulse * norm
+                        vel2 += impulse * norm
 
 acc = get_acc(pos)
 
@@ -105,7 +105,7 @@ while running:
         pos = [[pygame.Vector2(mid[0] + j * l - (N - 1) * l / 2, mid[1] + i * l - (N - 1) * l / 2) for j in range(N)] for i in range(N)]
         vel = [[pygame.Vector2(0, 0) for _ in range(N)] for _ in range(N)]
 
-    resolve_collisions()
+    if_collisions()
     acc = get_acc(pos)
     for i in range(N):
         for j in range(N):
