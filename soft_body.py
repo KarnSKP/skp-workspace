@@ -8,7 +8,7 @@ screen = pygame.display.set_mode(resolution)
 clock = pygame.time.Clock()
 running = True
 
-fps = 1e3
+fps = 180
 dt = 1 / fps
 
 screen_color = (0, 0, 0)
@@ -19,8 +19,8 @@ obj_radius = 0.05 * factor
 obj_radius_sq = obj_radius ** 2
 choose = {}
 
-N = 10
-l, k, mass = 1 * factor / (N - 1), 20000, 1
+N = 5
+l, k, mass = 0.8 * factor / (N - 1), 5000, 1
 
 gravity = pygame.Vector2(0, 9.81) * factor
 
@@ -143,12 +143,12 @@ while running:
         for j in range(N):
             pygame.draw.circle(screen, obj_color, pos[i][j], obj_radius)
             if i < N - 1:
-                pygame.draw.line(screen, obj_color, pos[i][j], pos[i + 1][j], int(0.4 * obj_radius))
+                pygame.draw.line(screen, obj_color, pos[i][j], pos[i + 1][j], int(0.5 * obj_radius))
             if j < N - 1:
-                pygame.draw.line(screen, obj_color, pos[i][j], pos[i][j + 1], int(0.4 * obj_radius))
+                pygame.draw.line(screen, obj_color, pos[i][j], pos[i][j + 1], int(0.5 * obj_radius))
             if i < N - 1 and j < N - 1:
-                pygame.draw.line(screen, obj_color, pos[i][j], pos[i + 1][j + 1], int(0.3 * obj_radius))
-                pygame.draw.line(screen, obj_color, pos[i][j + 1], pos[i + 1][j], int(0.3 * obj_radius))
+                pygame.draw.line(screen, obj_color, pos[i][j], pos[i + 1][j + 1], int(0.4 * obj_radius))
+                pygame.draw.line(screen, obj_color, pos[i][j + 1], pos[i + 1][j], int(0.4 * obj_radius))
 
     pygame.display.flip()
     clock.tick_busy_loop(fps)
